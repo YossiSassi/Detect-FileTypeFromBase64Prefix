@@ -19,7 +19,7 @@ Base64PrefixChars = default to 24. although ~10 to 18 should be ok.
 
 ExportCsv - Path to exported CSV results file, e.g. c:\temp\filetypes.csv
 
-ExportJson = Path to exported JSON results file, e.g. c:\temp\filetypes.csv
+ExportJson = Path to exported JSON results file, e.g. c:\temp\filetypes.json
 
 ### .EXAMPLE 1
 #### Basic usage - scan current directory
