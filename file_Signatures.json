@@ -1,0 +1,214 @@
+[
+  {
+    "name": "PNG",
+    "sigHex": "89504E470D0A1A0A",
+    "offset": 0,
+    "note": "PNG image"
+  },
+  {
+    "name": "JPEG",
+    "sigHex": "FFD8FF",
+    "offset": 0,
+    "note": "JPEG image (JFIF/EXIF)"
+  },
+  {
+    "name": "GIF87a",
+    "sigAscii": "GIF87a",
+    "offset": 0,
+    "note": "GIF image (87a)"
+  },
+  {
+    "name": "GIF89a",
+    "sigAscii": "GIF89a",
+    "offset": 0,
+    "note": "GIF image (89a)"
+  },
+  {
+    "name": "BMP",
+    "sigAscii": "BM",
+    "sigHex": "424D",
+    "offset": 0,
+    "note": "Windows Bitmap"
+  },
+  {
+    "name": "WEBP (RIFF)",
+    "sigAscii": "RIFF",
+    "offset": 0,
+    "note": "RIFF container — WEBP often has 'WEBP' at offset 8"
+  },
+  {
+    "name": "ICO (icon)",
+    "sigHex": "00000100",
+    "offset": 0,
+    "note": "ICO icon file"
+  },
+  {
+    "name": "PDF",
+    "sigAscii": "%PDF",
+    "offset": 0,
+    "note": "PDF document"
+  },
+  {
+    "name": "ZIP/OOXML/DOCX",
+    "sigHex": "504B0304",
+    "offset": 0,
+    "note": "ZIP container (also DOCX/XLSX/PPTX)"
+  },
+  {
+    "name": "RAR (v1.5)",
+    "sigHex": "526172211A0700",
+    "offset": 0,
+    "note": "RAR archive"
+  },
+  {
+    "name": "RAR (v5)",
+    "sigHex": "526172211A070100",
+    "offset": 0,
+    "note": "RAR v5 archive"
+  },
+  {
+    "name": "7z",
+    "sigHex": "377ABCAF271C",
+    "offset": 0,
+    "note": "7-Zip archive"
+  },
+  {
+    "name": "GZIP",
+    "sigHex": "1F8B08",
+    "offset": 0,
+    "note": "gzip compressed stream"
+  },
+  {
+    "name": "BZ2",
+    "sigAscii": "BZh",
+    "offset": 0,
+    "note": "bzip2 compressed stream"
+  },
+  {
+    "name": "XZ",
+    "sigHex": "FD377A585A00",
+    "offset": 0,
+    "note": "XZ compressed stream"
+  },
+  {
+    "name": "PE (MZ)",
+    "sigAscii": "MZ",
+    "sigHex": "4D5A",
+    "offset": 0,
+    "note": "Windows PE executable (MZ header)"
+  },
+  {
+    "name": "ELF",
+    "sigHex": "7F454C46",
+    "offset": 0,
+    "note": "Linux ELF binary"
+  },
+  {
+    "name": "Mach-O (32/64)",
+    "sigHex": "FEEDFACE",
+    "offset": 0,
+    "note": "Mach-O 32-bit"
+  },
+  {
+    "name": "Mach-O (64)",
+    "sigHex": "FEEDFACF",
+    "offset": 0,
+    "note": "Mach-O 64-bit"
+  },
+  {
+    "name": "Mach-O (reverse)",
+    "sigHex": "CEFAEDFE",
+    "offset": 0,
+    "note": "Mach-O (reverse endian)"
+  },
+  {
+    "name": "DER / X.509 (ASN.1)",
+    "sigHex": "3082",
+    "offset": 0,
+    "note": "DER-encoded cert or ASN.1 structure (Base64 'MII...')"
+  },
+  {
+    "name": "MP4 / ISOBMFF",
+    "sigAscii": "ftyp",
+    "offset": 4,
+    "note": "MP4/ISOBMFF family (ftyp at offset 4)"
+  },
+  {
+    "name": "AVI",
+    "sigAscii": "RIFF",
+    "offset": 0,
+    "note": "AVI video (look for 'AVI ' at offset 8)"
+  },
+  {
+    "name": "WAV",
+    "sigAscii": "RIFF",
+    "offset": 0,
+    "note": "WAV audio (look for 'WAVE' at offset 8)"
+  },
+  {
+    "name": "FLAC",
+    "sigAscii": "fLaC",
+    "offset": 0,
+    "note": "FLAC audio"
+  },
+  {
+    "name": "MP3 (ID3 tag)",
+    "sigAscii": "ID3",
+    "offset": 0,
+    "note": "MP3 audio with ID3 tag"
+  },
+  {
+    "name": "MP3 (frame sync)",
+    "sigHex": "FFFB",
+    "offset": 0,
+    "note": "MP3 audio frame sync"
+  },
+  {
+    "name": "TIFF (LE)",
+    "sigHex": "49492A00",
+    "offset": 0,
+    "note": "TIFF little-endian"
+  },
+  {
+    "name": "TIFF (BE)",
+    "sigHex": "4D4D002A",
+    "offset": 0,
+    "note": "TIFF big-endian"
+  },
+  {
+    "name": "HTML",
+    "sigAscii": "<!DOCT",
+    "offset": 0,
+    "note": "HTML document"
+  },
+  {
+    "name": "XML",
+    "sigAscii": "<?xml",
+    "offset": 0,
+    "note": "XML document"
+  },
+  {
+    "name": "Legacy DOC (OLE2)",
+    "sigHex": "D0CF11E0A1B11AE1",
+    "offset": 0,
+    "note": "Old Microsoft Office (DOC/XLS/PPT)"
+  },
+  {
+    "name": "WASM",
+    "sigHex": "0061736D",
+    "offset": 0,
+    "note": "WebAssembly binary"
+  },
+  {
+    "name": "PSD",
+    "sigAscii": "8BPS",
+    "offset": 0,
+    "note": "Photoshop Document"
+  },
+  {
+    "name": "SQLite",
+    "sigAscii": "SQLite format 3",
+    "offset": 0,
+    "note": "SQLite database"
+  }
+]
