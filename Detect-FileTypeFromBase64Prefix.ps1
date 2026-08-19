@@ -1,5 +1,5 @@
 ﻿<#
-# my first POC: simple b64 common prefixes detector
+# basic POC: simple b64 common prefixes detector
 # Reading the first N bytes (e.g. 32) is enough
 $fs = [System.IO.File]::OpenRead("C:\windows\system32\calc.exe")
 $buf = New-Object byte[] 32;
@@ -20,15 +20,19 @@ $B64 = [Convert]::ToBase64String($buf,0,$read)
   - Can export results to CSV or JSON
 
 .EXAMPLE
-  # Basic usage - scan current directory
-  .\Detect-FileTypeFromBase64Prefix.ps1
+  # Scan current directory using the extended signatures file (hundreds of file types)
+  .\Detect-FileTypeFromBase64Prefix.ps1 -SignatureJson .\file_Signatures_extended.json
 
 .EXAMPLE
-  # Export to CSV
-  .\Detect-FileTypeFromBase64Prefix.ps1 -Path C:\Downloads -Recurse -ExportCsv .\filetypes.csv
+  # Scan for common file types + Export to CSV
+  .\Detect-FileTypeFromBase64Prefix.ps1 -SignatureJson .\file_Signatures_common.json -Path C:\users\john\Downloads -Recurse -ExportCsv .\filetypes.csv
+
+.EXAMPLE
+  # Scan a folder using extended signatures file + Export to json
+  .\Detect-FileTypeFromBase64Prefix.ps1 -SignatureJson .\file_Signatures_extended.json -Path C:\users\john\Downloads -Recurse -ExportJson .\filetypes.json
 
 .NOTES
-  Version: 1.0
+  Version: 1.0.1
   Comments: yossis@protonmail.com (1nTh35h311)
 #>
 
@@ -36,7 +40,7 @@ param(
     #[Parameter(Mandatory=$true)]
     [string]$Path = ".\",
 
-    [string]$SignatureJson = ".\file_Signatures.json",
+    [string]$SignatureJson = ".\file_Signatures_common.json",
 
     [switch]$Recurse,
 
