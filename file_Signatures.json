@@ -1,15 +1,657 @@
 [
   {
+    "name": "PEM new certificate request",
+    "sigAscii": "-----BEGIN NEW CERTIFICATE REQUEST-----",
+    "offset": 0,
+    "note": "Legacy PEM PKCS#10 certificate signing request"
+  },
+  {
+    "name": "VirtualBox VDI preheader",
+    "sigAscii": "<<< Oracle VM VirtualBox Disk Image >>>",
+    "offset": 0,
+    "note": "VirtualBox VDI virtual disk"
+  },
+  {
+    "name": "PEM encrypted private key",
+    "sigAscii": "-----BEGIN ENCRYPTED PRIVATE KEY-----",
+    "offset": 0,
+    "note": "PEM encrypted PKCS#8 private key"
+  },
+  {
+    "name": "PGP private key armor",
+    "sigAscii": "-----BEGIN PGP PRIVATE KEY BLOCK-----",
+    "offset": 0,
+    "note": "ASCII-armored OpenPGP private key"
+  },
+  {
+    "name": "PGP public key armor",
+    "sigAscii": "-----BEGIN PGP PUBLIC KEY BLOCK-----",
+    "offset": 0,
+    "note": "ASCII-armored OpenPGP public key"
+  },
+  {
+    "name": "OpenSSH private key",
+    "sigAscii": "-----BEGIN OPENSSH PRIVATE KEY-----",
+    "offset": 0,
+    "note": "OpenSSH private key"
+  },
+  {
+    "name": "PEM certificate request",
+    "sigAscii": "-----BEGIN CERTIFICATE REQUEST-----",
+    "offset": 0,
+    "note": "PEM PKCS#10 certificate signing request"
+  },
+  {
+    "name": "PGP signed message armor",
+    "sigAscii": "-----BEGIN PGP SIGNED MESSAGE-----",
+    "offset": 0,
+    "note": "ASCII-armored OpenPGP clear-signed message"
+  },
+  {
+    "name": "PDB / MSF 7.0",
+    "sigHex": "4D6963726F736F667420432F432B2B204D534620372E30300D0A1A4453000000",
+    "offset": 0,
+    "note": "Microsoft Program Database (PDB), MSF 7.0"
+  },
+  {
+    "name": "PEM RSA private key",
+    "sigAscii": "-----BEGIN RSA PRIVATE KEY-----",
+    "offset": 0,
+    "note": "PEM PKCS#1 RSA private key"
+  },
+  {
+    "name": "SSH2 public key",
+    "sigAscii": "---- BEGIN SSH2 PUBLIC KEY ----",
+    "offset": 0,
+    "note": "SSH2 public key file"
+  },
+  {
+    "name": "PEM EC private key",
+    "sigAscii": "-----BEGIN EC PRIVATE KEY-----",
+    "offset": 0,
+    "note": "PEM SEC1 EC private key"
+  },
+  {
+    "name": "PEM RSA public key",
+    "sigAscii": "-----BEGIN RSA PUBLIC KEY-----",
+    "offset": 0,
+    "note": "PEM PKCS#1 RSA public key"
+  },
+  {
+    "name": "PEM DH parameters",
+    "sigAscii": "-----BEGIN DH PARAMETERS-----",
+    "offset": 0,
+    "note": "PEM Diffie-Hellman parameters"
+  },
+  {
+    "name": "PGP signature armor",
+    "sigAscii": "-----BEGIN PGP SIGNATURE-----",
+    "offset": 0,
+    "note": "ASCII-armored OpenPGP detached/embedded signature"
+  },
+  {
+    "name": "PEM certificate",
+    "sigAscii": "-----BEGIN CERTIFICATE-----",
+    "offset": 0,
+    "note": "PEM-encoded X.509 certificate"
+  },
+  {
+    "name": "PEM private key",
+    "sigAscii": "-----BEGIN PRIVATE KEY-----",
+    "offset": 0,
+    "note": "PEM PKCS#8 private key"
+  },
+  {
+    "name": "PGP message armor",
+    "sigAscii": "-----BEGIN PGP MESSAGE-----",
+    "offset": 0,
+    "note": "ASCII-armored OpenPGP message"
+  },
+  {
+    "name": "SPC700",
+    "sigAscii": "SNES-SPC700 Sound File Data",
+    "offset": 0,
+    "note": "Super Nintendo SPC audio"
+  },
+  {
+    "name": "PEM public key",
+    "sigAscii": "-----BEGIN PUBLIC KEY-----",
+    "offset": 0,
+    "note": "PEM SubjectPublicKeyInfo public key"
+  },
+  {
+    "name": "PEM X509 CRL",
+    "sigAscii": "-----BEGIN X509 CRL-----",
+    "offset": 0,
+    "note": "PEM X.509 certificate revocation list"
+  },
+  {
+    "name": "PuTTY private key v2",
+    "sigAscii": "PuTTY-User-Key-File-2:",
+    "offset": 0,
+    "note": "PuTTY PPK private key v2"
+  },
+  {
+    "name": "PuTTY private key v3",
+    "sigAscii": "PuTTY-User-Key-File-3:",
+    "offset": 0,
+    "note": "PuTTY PPK private key v3"
+  },
+  {
+    "name": "age encrypted file",
+    "sigAscii": "age-encryption.org/v1",
+    "offset": 0,
+    "note": "age encryption file format"
+  },
+  {
+    "name": "PEM PKCS7",
+    "sigAscii": "-----BEGIN PKCS7-----",
+    "offset": 0,
+    "note": "PEM PKCS#7/CMS object"
+  },
+  {
+    "name": "Python env script",
+    "sigAscii": "#!/usr/bin/env python",
+    "offset": 0,
+    "note": "Python script using env shebang"
+  },
+  {
+    "name": "VMware VMDK descriptor",
+    "sigAscii": "# Disk DescriptorFile",
+    "offset": 0,
+    "note": "Text VMDK descriptor"
+  },
+  {
+    "name": "FBX binary",
+    "sigAscii": "Kaydara FBX Binary  ",
+    "offset": 0,
+    "note": "Autodesk FBX binary"
+  },
+  {
+    "name": "VOC",
+    "sigHex": "437265617469766520566F6963652046696C651A",
+    "offset": 0,
+    "note": "Creative Voice File"
+  },
+  {
+    "name": "Windows shortcut (LNK)",
+    "sigHex": "4C0000000114020000000000C000000000000046",
+    "offset": 0,
+    "note": "Windows Shell Link .lnk"
+  },
+  {
+    "name": "MATLAB v5",
+    "sigAscii": "MATLAB 5.0 MAT-file",
+    "offset": 0,
+    "note": "MATLAB Level 5 MAT-file"
+  },
+  {
+    "name": "PEM CMS",
+    "sigAscii": "-----BEGIN CMS-----",
+    "offset": 0,
+    "note": "PEM CMS object"
+  },
+  {
+    "name": "XM module",
+    "sigAscii": "Extended Module: ",
+    "offset": 0,
+    "note": "FastTracker II XM module"
+  },
+  {
+    "name": "ASF / WMV / WMA",
+    "sigHex": "3026B2758E66CF11A6D900AA0062CE6C",
+    "offset": 0,
+    "note": "Advanced Systems Format container (ASF/WMV/WMA)"
+  },
+  {
+    "name": "Microsoft OneNote",
+    "sigHex": "E4525C7B8CD8A74DAEB15378D02996D3",
+    "offset": 0,
+    "note": "Microsoft OneNote .one file"
+  },
+  {
+    "name": "SQLite",
+    "offset": 0,
+    "note": "SQLite database header including terminating NUL",
+    "sigHex": "53514C69746520666F726D6174203300"
+  },
+  {
+    "name": "Fujifilm RAF",
+    "sigAscii": "FUJIFILMCCD-RAW",
+    "offset": 0,
+    "note": "Fujifilm RAF raw image"
+  },
+  {
+    "name": "iCalendar",
+    "sigAscii": "BEGIN:VCALENDAR",
+    "offset": 0,
+    "note": "iCalendar ICS file"
+  },
+  {
+    "name": "SQLite-based Firefox/Chrome DB",
+    "sigAscii": "SQLite format 3",
+    "offset": 0,
+    "note": "Browser databases commonly use SQLite"
+  },
+  {
+    "name": "Android backup",
+    "sigAscii": "ANDROID BACKUP",
+    "offset": 0,
+    "note": "Android adb backup file"
+  },
+  {
+    "name": "Canon CRW / CIFF",
+    "sigHex": "49491A0000004845415043434452",
+    "offset": 0,
+    "note": "Canon CRW (CIFF) raw image"
+  },
+  {
+    "name": "Type 1 PFA",
+    "sigAscii": "%!PS-AdobeFont",
+    "offset": 0,
+    "note": "PostScript Type 1 ASCII font (PFA)"
+  },
+  {
+    "name": "STEP / STEP-NC",
+    "sigAscii": "ISO-10303-21;",
+    "offset": 0,
+    "note": "STEP physical exchange file"
+  },
+  {
+    "name": "JPEG 2000 JP2",
+    "sigHex": "0000000C6A5020200D0A870A",
+    "offset": 0,
+    "note": "JPEG 2000 JP2 container"
+  },
+  {
+    "name": "JPEG XL container",
+    "sigHex": "0000000C4A584C200D0A870A",
+    "offset": 0,
+    "note": "JPEG XL container"
+  },
+  {
+    "name": "KTX v1",
+    "sigHex": "AB4B5458203131BB0D0A1A0A",
+    "offset": 0,
+    "note": "Khronos Texture (KTX) v1"
+  },
+  {
+    "name": "KTX v2",
+    "sigHex": "AB4B5458203230BB0D0A1A0A",
+    "offset": 0,
+    "note": "Khronos Texture (KTX) v2"
+  },
+  {
+    "name": "OpenSSH Ed25519 public key",
+    "sigAscii": "ssh-ed25519 ",
+    "offset": 0,
+    "note": "OpenSSH Ed25519 public-key text"
+  },
+  {
+    "name": "Bash script",
+    "sigAscii": "#!/bin/bash",
+    "offset": 0,
+    "note": "Bash script with direct shebang"
+  },
+  {
+    "name": "OpenSSH ECDSA public key",
+    "sigAscii": "ecdsa-sha2-",
+    "offset": 0,
+    "note": "OpenSSH ECDSA public-key text"
+  },
+  {
+    "name": "VCARD",
+    "sigAscii": "BEGIN:VCARD",
+    "offset": 0,
+    "note": "vCard contact file"
+  },
+  {
+    "name": "Canon CR2",
+    "sigHex": "49492A00100000004352",
+    "offset": 0,
+    "note": "Canon CR2 raw image"
+  },
+  {
+    "name": "EPS / Adobe PostScript",
+    "sigAscii": "%!PS-Adobe",
+    "offset": 0,
+    "note": "Adobe PostScript/EPS family header"
+  },
+  {
+    "name": "Radiance HDR",
+    "sigAscii": "#?RADIANCE",
+    "offset": 0,
+    "note": "Radiance RGBE/HDR image"
+  },
+  {
+    "name": "Snappy framed",
+    "sigHex": "FF060000734E61507059",
+    "offset": 0,
+    "note": "Snappy framed stream identifier"
+  },
+  {
+    "name": "AMR-WB",
+    "sigHex": "2321414D522D57420A",
+    "offset": 0,
+    "note": "AMR wideband audio"
+  },
+  {
+    "name": "BDF font",
+    "sigAscii": "STARTFONT",
+    "offset": 0,
+    "note": "Glyph Bitmap Distribution Format font"
+  },
+  {
+    "name": "FITS",
+    "sigAscii": "SIMPLE  =",
+    "offset": 0,
+    "note": "FITS scientific image/data file"
+  },
+  {
+    "name": "GIMP XCF",
+    "sigAscii": "gimp xcf ",
+    "offset": 0,
+    "note": "GIMP native XCF image"
+  },
+  {
+    "name": "LZO stream",
+    "sigHex": "894C5A4F000D0A1A0A",
+    "offset": 0,
+    "note": "LZO compressed stream"
+  },
+  {
+    "name": "POSIX shell script",
+    "sigAscii": "#!/bin/sh",
+    "offset": 0,
+    "note": "POSIX shell script with direct shebang"
+  },
+  {
+    "name": "XPM",
+    "sigAscii": "/* XPM */",
+    "offset": 0,
+    "note": "X PixMap image"
+  },
+  {
+    "name": "YUV4MPEG2",
+    "sigAscii": "YUV4MPEG2",
+    "offset": 0,
+    "note": "YUV4MPEG2 video stream"
+  },
+  {
+    "name": "AFF forensic image",
+    "sigHex": "41464631300D0A00",
+    "offset": 0,
+    "note": "Advanced Forensic Format (AFF) image"
+  },
+  {
+    "name": "Android boot image",
+    "sigAscii": "ANDROID!",
+    "offset": 0,
+    "note": "Android boot image"
+  },
+  {
+    "name": "Android vendor boot image",
+    "sigAscii": "VNDRBOOT",
+    "offset": 0,
+    "note": "Android vendor_boot image"
+  },
+  {
+    "name": "Apple .DS_Store",
+    "sigHex": "0000000142756431",
+    "offset": 0,
+    "note": "Apple Finder .DS_Store file (Bud1)"
+  },
+  {
+    "name": "AR archive",
+    "offset": 0,
+    "note": "Unix ar archive magic including newline; also used by Debian .deb packages",
+    "sigHex": "213C617263683E0A"
+  },
+  {
+    "name": "Binary Apple plist",
+    "sigAscii": "bplist00",
+    "offset": 0,
+    "note": "Apple binary property list"
+  },
+  {
+    "name": "Chrome extension CRX v2",
+    "sigHex": "4372323402000000",
+    "offset": 0,
+    "note": "Chrome extension package CRX v2"
+  },
+  {
+    "name": "Chrome extension CRX v3",
+    "sigHex": "4372323403000000",
+    "offset": 0,
+    "note": "Chrome extension package CRX v3"
+  },
+  {
+    "name": "DjVu",
+    "sigAscii": "AT&TFORM",
+    "offset": 0,
+    "note": "DjVu/IFF-family document container"
+  },
+  {
+    "name": "EWF/E01",
+    "sigHex": "455646090D0AFF00",
+    "offset": 0,
+    "note": "Expert Witness Compression Format / EnCase E01"
+  },
+  {
+    "name": "Farbfeld",
+    "sigAscii": "farbfeld",
+    "offset": 0,
+    "note": "Farbfeld lossless image"
+  },
+  {
+    "name": "HDF5",
+    "sigHex": "894844460D0A1A0A",
+    "offset": 0,
+    "note": "HDF5 data container"
+  },
+  {
+    "name": "KeePass KDB",
+    "sigHex": "03D9A29A65FB4BB5",
+    "offset": 0,
+    "note": "KeePass 1.x KDB database"
+  },
+  {
+    "name": "KeePass KDBX",
+    "sigHex": "03D9A29A67FB4BB5",
+    "offset": 0,
+    "note": "KeePass KDBX database"
+  },
+  {
+    "name": "Legacy DOC (OLE2)",
+    "sigHex": "D0CF11E0A1B11AE1",
+    "offset": 0,
+    "note": "Old Microsoft Office (DOC/XLS/PPT)"
+  },
+  {
+    "name": "LUKS1",
+    "sigHex": "4C554B53BABE0001",
+    "offset": 0,
+    "note": "Linux Unified Key Setup v1"
+  },
+  {
+    "name": "LUKS2",
+    "sigHex": "4C554B53BABE0002",
+    "offset": 0,
+    "note": "Linux Unified Key Setup v2"
+  },
+  {
+    "name": "Microsoft Reader LIT",
+    "sigAscii": "ITOLITLS",
+    "offset": 0,
+    "note": "Microsoft Reader .lit e-book"
+  },
+  {
+    "name": "OpenSSH RSA public key",
+    "sigAscii": "ssh-rsa ",
+    "offset": 0,
+    "note": "OpenSSH RSA public-key text"
+  },
+  {
+    "name": "OpenSSL salted encryption",
+    "sigAscii": "Salted__",
+    "offset": 0,
+    "note": "OpenSSL enc salted ciphertext header"
+  },
+  {
     "name": "PNG",
     "sigHex": "89504E470D0A1A0A",
     "offset": 0,
     "note": "PNG image"
   },
   {
-    "name": "JPEG",
-    "sigHex": "FFD8FF",
+    "name": "PS-X EXE",
+    "sigAscii": "PS-X EXE",
     "offset": 0,
-    "note": "JPEG image (JFIF/EXIF)"
+    "note": "Sony PlayStation 1 executable"
+  },
+  {
+    "name": "RAR (v5)",
+    "sigHex": "526172211A070100",
+    "offset": 0,
+    "note": "RAR v5 archive"
+  },
+  {
+    "name": "Snoop capture",
+    "sigHex": "736E6F6F70000000",
+    "offset": 0,
+    "note": "Sun snoop packet capture"
+  },
+  {
+    "name": "SQLite rollback journal",
+    "sigHex": "D9D505F920A163D7",
+    "offset": 0,
+    "note": "SQLite rollback journal"
+  },
+  {
+    "name": "systemd journal",
+    "sigAscii": "LPKSHHRH",
+    "offset": 0,
+    "note": "systemd journal file"
+  },
+  {
+    "name": "TDB",
+    "sigAscii": "TDB file",
+    "offset": 0,
+    "note": "Trivial Database (TDB) file"
+  },
+  {
+    "name": "UF2 firmware",
+    "sigHex": "5546320A57515D9E",
+    "offset": 0,
+    "note": "UF2 firmware block"
+  },
+  {
+    "name": "UnityRaw",
+    "sigAscii": "UnityRaw",
+    "offset": 0,
+    "note": "Unity raw asset bundle"
+  },
+  {
+    "name": "UnityWeb",
+    "sigAscii": "UnityWeb",
+    "offset": 0,
+    "note": "Unity web asset bundle"
+  },
+  {
+    "name": "USD crate",
+    "sigAscii": "PXR-USDC",
+    "offset": 0,
+    "note": "Pixar Universal Scene Description binary crate"
+  },
+  {
+    "name": "VHDX",
+    "sigAscii": "vhdxfile",
+    "offset": 0,
+    "note": "Microsoft Hyper-V VHDX virtual disk"
+  },
+  {
+    "name": "Windows crash dump 32-bit",
+    "sigAscii": "PAGEDUMP",
+    "offset": 0,
+    "note": "Windows kernel crash dump, 32-bit family"
+  },
+  {
+    "name": "Windows crash dump 64-bit",
+    "sigAscii": "PAGEDU64",
+    "offset": 0,
+    "note": "Windows kernel crash dump, 64-bit family"
+  },
+  {
+    "name": "Windows Event Log EVTX",
+    "sigHex": "456C6646696C6500",
+    "offset": 0,
+    "note": "Windows Event Log EVTX"
+  },
+  {
+    "name": "Blender",
+    "sigAscii": "BLENDER",
+    "offset": 0,
+    "note": "Blender .blend file"
+  },
+  {
+    "name": "RAR (v1.5)",
+    "sigHex": "526172211A0700",
+    "offset": 0,
+    "note": "RAR archive"
+  },
+  {
+    "name": "UnityFS",
+    "sigAscii": "UnityFS",
+    "offset": 0,
+    "note": "Unity asset bundle"
+  },
+  {
+    "name": "WebAssembly text",
+    "sigAscii": "(module",
+    "offset": 0,
+    "note": "WebAssembly text format (WAT), common canonical prefix"
+  },
+  {
+    "name": "7z",
+    "sigHex": "377ABCAF271C",
+    "offset": 0,
+    "note": "7-Zip archive"
+  },
+  {
+    "name": "AMR-NB",
+    "sigHex": "2321414D520A",
+    "offset": 0,
+    "note": "AMR narrowband audio"
+  },
+  {
+    "name": "Apache Arrow IPC file",
+    "sigAscii": "ARROW1",
+    "offset": 0,
+    "note": "Apache Arrow IPC file"
+  },
+  {
+    "name": "ASCII STL heuristic",
+    "sigAscii": "solid ",
+    "offset": 0,
+    "note": "ASCII STL commonly starts with 'solid '; heuristic, not unique"
+  },
+  {
+    "name": "CPIO new ASCII",
+    "sigAscii": "070701",
+    "offset": 0,
+    "note": "cpio new ASCII format"
+  },
+  {
+    "name": "CPIO new ASCII CRC",
+    "sigAscii": "070702",
+    "offset": 0,
+    "note": "cpio new ASCII format with CRC"
+  },
+  {
+    "name": "CPIO old ASCII",
+    "sigAscii": "070707",
+    "offset": 0,
+    "note": "cpio old ASCII format"
   },
   {
     "name": "GIF87a",
@@ -24,65 +666,46 @@
     "note": "GIF image (89a)"
   },
   {
-    "name": "BMP",
-    "sigAscii": "BM",
-    "sigHex": "424D",
+    "name": "HTML",
+    "sigAscii": "<!DOCT",
     "offset": 0,
-    "note": "Windows Bitmap"
+    "note": "HTML document"
   },
   {
-    "name": "WEBP (RIFF)",
-    "sigAscii": "RIFF",
+    "name": "NumPy NPY full",
+    "sigHex": "934E554D5059",
     "offset": 0,
-    "note": "RIFF container — WEBP often has 'WEBP' at offset 8"
+    "note": "NumPy .npy array"
   },
   {
-    "name": "ICO (icon)",
-    "sigHex": "00000100",
+    "name": "Photoshop PSB v2",
+    "sigHex": "384250530002",
     "offset": 0,
-    "note": "ICO icon file"
+    "note": "Adobe Photoshop Large Document (PSB) version 2"
   },
   {
-    "name": "PDF",
-    "sigAscii": "%PDF",
+    "name": "Photoshop PSD v1",
+    "sigHex": "384250530001",
     "offset": 0,
-    "note": "PDF document"
+    "note": "Adobe Photoshop PSD version 1"
   },
   {
-    "name": "ZIP/OOXML/DOCX",
-    "sigHex": "504B0304",
+    "name": "PKM v1",
+    "sigAscii": "PKM 10",
     "offset": 0,
-    "note": "ZIP container (also DOCX/XLSX/PPTX)"
+    "note": "Ericsson texture compression PKM v1"
   },
   {
-    "name": "RAR (v1.5)",
-    "sigHex": "526172211A0700",
+    "name": "PKM v2",
+    "sigAscii": "PKM 20",
     "offset": 0,
-    "note": "RAR archive"
+    "note": "Ericsson texture compression PKM v2"
   },
   {
-    "name": "RAR (v5)",
-    "sigHex": "526172211A070100",
+    "name": "Radiance RGBE",
+    "sigAscii": "#?RGBE",
     "offset": 0,
-    "note": "RAR v5 archive"
-  },
-  {
-    "name": "7z",
-    "sigHex": "377ABCAF271C",
-    "offset": 0,
-    "note": "7-Zip archive"
-  },
-  {
-    "name": "GZIP",
-    "sigHex": "1F8B08",
-    "offset": 0,
-    "note": "gzip compressed stream"
-  },
-  {
-    "name": "BZ2",
-    "sigAscii": "BZh",
-    "offset": 0,
-    "note": "bzip2 compressed stream"
+    "note": "Radiance RGBE image"
   },
   {
     "name": "XZ",
@@ -91,17 +714,472 @@
     "note": "XZ compressed stream"
   },
   {
-    "name": "PE (MZ)",
-    "sigAscii": "MZ",
-    "sigHex": "4D5A",
+    "name": "DfuSe firmware",
+    "sigAscii": "DfuSe",
     "offset": 0,
-    "note": "Windows PE executable (MZ header)"
+    "note": "STMicroelectronics DfuSe firmware container"
+  },
+  {
+    "name": "MBOX",
+    "sigAscii": "From ",
+    "offset": 0,
+    "note": "Unix mbox mailbox, common message separator at file start"
+  },
+  {
+    "name": "NES NSF",
+    "sigHex": "4E45534D1A",
+    "offset": 0,
+    "note": "Nintendo Entertainment System Sound Format"
+  },
+  {
+    "name": "PostgreSQL custom dump",
+    "sigAscii": "PGDMP",
+    "offset": 0,
+    "note": "PostgreSQL pg_dump custom-format archive"
+  },
+  {
+    "name": "Redis RDB",
+    "sigAscii": "REDIS",
+    "offset": 0,
+    "note": "Redis RDB snapshot"
+  },
+  {
+    "name": "RTF",
+    "sigAscii": "{\\rtf",
+    "offset": 0,
+    "note": "Rich Text Format document"
+  },
+  {
+    "name": "VRML",
+    "sigAscii": "#VRML",
+    "offset": 0,
+    "note": "Virtual Reality Modeling Language"
+  },
+  {
+    "name": "WIM",
+    "sigAscii": "MSWIM",
+    "offset": 0,
+    "note": "Windows Imaging Format (WIM/ESD container)"
+  },
+  {
+    "name": "XML",
+    "sigAscii": "<?xml",
+    "offset": 0,
+    "note": "XML document"
+  },
+  {
+    "name": "AAC ADIF",
+    "sigAscii": "ADIF",
+    "offset": 0,
+    "note": "AAC Audio Data Interchange Format"
+  },
+  {
+    "name": "Aldus placeable WMF",
+    "sigHex": "D7CDC69A",
+    "offset": 0,
+    "note": "Aldus placeable Windows Metafile"
+  },
+  {
+    "name": "Android ART header",
+    "sigHex": "6172740A",
+    "offset": 0,
+    "note": "Android Runtime ART image (art\\n)"
+  },
+  {
+    "name": "Android DTBO image",
+    "sigHex": "D7B7AB1E",
+    "offset": 0,
+    "note": "Android DTBO partition image"
+  },
+  {
+    "name": "Android OAT header",
+    "sigHex": "6F61740A",
+    "offset": 0,
+    "note": "Android Runtime OAT file (oat\\n)"
+  },
+  {
+    "name": "Android sparse image",
+    "sigHex": "3AFF26ED",
+    "offset": 0,
+    "note": "Android sparse filesystem image"
+  },
+  {
+    "name": "Android VDEX",
+    "sigAscii": "vdex",
+    "offset": 0,
+    "note": "Android VDEX bytecode metadata"
+  },
+  {
+    "name": "Android Verified Boot metadata",
+    "sigAscii": "AVB0",
+    "offset": 0,
+    "note": "Android Verified Boot (vbmeta)"
+  },
+  {
+    "name": "Apache Avro object container",
+    "sigHex": "4F626A01",
+    "offset": 0,
+    "note": "Apache Avro object container"
+  },
+  {
+    "name": "Apache Parquet",
+    "sigAscii": "PAR1",
+    "offset": 0,
+    "note": "Apache Parquet columnar data"
+  },
+  {
+    "name": "Apple TrueType sfnt",
+    "sigAscii": "true",
+    "offset": 0,
+    "note": "Apple TrueType sfnt font"
+  },
+  {
+    "name": "Apple Type 1 sfnt",
+    "sigAscii": "typ1",
+    "offset": 0,
+    "note": "Apple Type 1 sfnt font"
+  },
+  {
+    "name": "ASTC",
+    "sigHex": "13ABA15C",
+    "offset": 0,
+    "note": "Adaptive Scalable Texture Compression image"
+  },
+  {
+    "name": "AU/SND",
+    "sigAscii": ".snd",
+    "offset": 0,
+    "note": "Sun/NeXT AU audio"
+  },
+  {
+    "name": "AutoCAD DWG family",
+    "sigAscii": "AC10",
+    "offset": 0,
+    "note": "AutoCAD DWG family version prefix"
+  },
+  {
+    "name": "BigTIFF (BE)",
+    "sigHex": "4D4D002B",
+    "offset": 0,
+    "note": "BigTIFF image, big-endian"
+  },
+  {
+    "name": "BigTIFF (LE)",
+    "sigHex": "49492B00",
+    "offset": 0,
+    "note": "BigTIFF image, little-endian"
+  },
+  {
+    "name": "BUFR",
+    "sigAscii": "BUFR",
+    "offset": 0,
+    "note": "WMO BUFR meteorological data"
+  },
+  {
+    "name": "CAB",
+    "sigAscii": "MSCF",
+    "offset": 0,
+    "note": "Microsoft Cabinet archive"
+  },
+  {
+    "name": "CAF audio",
+    "sigAscii": "caff",
+    "offset": 0,
+    "note": "Core Audio Format"
+  },
+  {
+    "name": "Canon Magic Lantern MLV",
+    "sigAscii": "MLVI",
+    "offset": 0,
+    "note": "Magic Lantern Video container"
+  },
+  {
+    "name": "Chrome extension CRX",
+    "sigAscii": "Cr24",
+    "offset": 0,
+    "note": "Chrome extension package (CRX)"
+  },
+  {
+    "name": "CramFS BE",
+    "sigHex": "28CD3D45",
+    "offset": 0,
+    "note": "CramFS filesystem image, big-endian"
+  },
+  {
+    "name": "CramFS LE",
+    "sigHex": "453DCD28",
+    "offset": 0,
+    "note": "CramFS filesystem image, little-endian"
+  },
+  {
+    "name": "CUR (cursor)",
+    "sigHex": "00000200",
+    "offset": 0,
+    "note": "Windows cursor file"
+  },
+  {
+    "name": "Dalvik DEX header",
+    "sigHex": "6465780A",
+    "offset": 0,
+    "note": "Android Dalvik executable (dex\\n; version bytes follow)"
+  },
+  {
+    "name": "Dalvik ODEX header",
+    "sigHex": "6465790A",
+    "offset": 0,
+    "note": "Android optimized Dalvik executable (dey\\n)"
+  },
+  {
+    "name": "DDS",
+    "sigAscii": "DDS ",
+    "offset": 0,
+    "note": "DirectDraw Surface texture"
+  },
+  {
+    "name": "Doom IWAD",
+    "sigAscii": "IWAD",
+    "offset": 0,
+    "note": "Doom internal WAD archive"
+  },
+  {
+    "name": "Doom PWAD",
+    "sigAscii": "PWAD",
+    "offset": 0,
+    "note": "Doom patch WAD archive"
+  },
+  {
+    "name": "DPX big-endian",
+    "sigAscii": "SDPX",
+    "offset": 0,
+    "note": "SMPTE DPX image, big-endian"
+  },
+  {
+    "name": "DPX little-endian",
+    "sigAscii": "XPDS",
+    "offset": 0,
+    "note": "SMPTE DPX image, little-endian"
+  },
+  {
+    "name": "DTS BE 14-bit",
+    "sigHex": "1FFFE800",
+    "offset": 0,
+    "note": "DTS audio, big-endian 14-bit sync"
+  },
+  {
+    "name": "DTS BE 16-bit",
+    "sigHex": "7FFE8001",
+    "offset": 0,
+    "note": "DTS audio, big-endian 16-bit sync"
+  },
+  {
+    "name": "DTS LE 14-bit",
+    "sigHex": "FF1F00E8",
+    "offset": 0,
+    "note": "DTS audio, little-endian 14-bit sync"
+  },
+  {
+    "name": "DTS LE 16-bit",
+    "sigHex": "FE7F0180",
+    "offset": 0,
+    "note": "DTS audio, little-endian 16-bit sync"
   },
   {
     "name": "ELF",
     "sigHex": "7F454C46",
     "offset": 0,
     "note": "Linux ELF binary"
+  },
+  {
+    "name": "ESRI Shapefile",
+    "sigHex": "0000270A",
+    "offset": 0,
+    "note": "ESRI Shapefile main file"
+  },
+  {
+    "name": "FLAC",
+    "sigAscii": "fLaC",
+    "offset": 0,
+    "note": "FLAC audio"
+  },
+  {
+    "name": "Flattened Device Tree (DTB)",
+    "sigHex": "D00DFEED",
+    "offset": 0,
+    "note": "Flattened Device Tree blob"
+  },
+  {
+    "name": "Git bitmap",
+    "sigAscii": "BITM",
+    "offset": 0,
+    "note": "Git pack bitmap"
+  },
+  {
+    "name": "Git commit-graph",
+    "sigAscii": "CGPH",
+    "offset": 0,
+    "note": "Git commit-graph file"
+  },
+  {
+    "name": "Git index",
+    "sigAscii": "DIRC",
+    "offset": 0,
+    "note": "Git index file"
+  },
+  {
+    "name": "Git multi-pack-index",
+    "sigAscii": "MIDX",
+    "offset": 0,
+    "note": "Git multi-pack-index"
+  },
+  {
+    "name": "Git packfile",
+    "sigAscii": "PACK",
+    "offset": 0,
+    "note": "Git packfile; note PACK is also used by some legacy game archives"
+  },
+  {
+    "name": "Git reftable",
+    "sigAscii": "REFT",
+    "offset": 0,
+    "note": "Git reftable file"
+  },
+  {
+    "name": "Git reverse index",
+    "sigAscii": "RIDX",
+    "offset": 0,
+    "note": "Git reverse index"
+  },
+  {
+    "name": "GLB (binary glTF)",
+    "sigAscii": "glTF",
+    "offset": 0,
+    "note": "Binary glTF 3D model"
+  },
+  {
+    "name": "Godot PCK",
+    "sigAscii": "GDPC",
+    "offset": 0,
+    "note": "Godot PCK package"
+  },
+  {
+    "name": "GRIB",
+    "sigAscii": "GRIB",
+    "offset": 0,
+    "note": "WMO GRIB meteorological data"
+  },
+  {
+    "name": "HDF4",
+    "sigHex": "0E031301",
+    "offset": 0,
+    "note": "HDF4 scientific data"
+  },
+  {
+    "name": "ICNS",
+    "sigAscii": "icns",
+    "offset": 0,
+    "note": "Apple icon image"
+  },
+  {
+    "name": "ICO (icon)",
+    "sigHex": "00000100",
+    "offset": 0,
+    "note": "ICO icon file"
+  },
+  {
+    "name": "Impulse Tracker module",
+    "sigAscii": "IMPM",
+    "offset": 0,
+    "note": "Impulse Tracker IT module"
+  },
+  {
+    "name": "IVF video",
+    "sigAscii": "DKIF",
+    "offset": 0,
+    "note": "IVF container commonly used for VP8/VP9/AV1"
+  },
+  {
+    "name": "Java class / Mach-O fat (ambiguous)",
+    "sigHex": "CAFEBABE",
+    "offset": 0,
+    "note": "Java .class magic; same bytes are also Mach-O universal/fat 32-bit magic"
+  },
+  {
+    "name": "Java KeyStore (JKS)",
+    "sigHex": "FEEDFEED",
+    "offset": 0,
+    "note": "Java KeyStore"
+  },
+  {
+    "name": "Java serialization",
+    "sigHex": "ACED0005",
+    "offset": 0,
+    "note": "Java Object Serialization stream"
+  },
+  {
+    "name": "JPEG 2000 codestream",
+    "sigHex": "FF4FFF51",
+    "offset": 0,
+    "note": "JPEG 2000 raw codestream (J2K/J2C)"
+  },
+  {
+    "name": "JPEG XR",
+    "sigHex": "4949BC01",
+    "offset": 0,
+    "note": "JPEG XR / HD Photo image"
+  },
+  {
+    "name": "Kodak Cineon BE",
+    "sigHex": "802A5FD7",
+    "offset": 0,
+    "note": "Kodak Cineon image"
+  },
+  {
+    "name": "LAS",
+    "sigAscii": "LASF",
+    "offset": 0,
+    "note": "ASPRS LAS LiDAR point-cloud file"
+  },
+  {
+    "name": "LLVM bitcode",
+    "sigHex": "4243C0DE",
+    "offset": 0,
+    "note": "LLVM bitcode"
+  },
+  {
+    "name": "LLVM bitcode wrapper",
+    "sigHex": "DEC0170B",
+    "offset": 0,
+    "note": "LLVM bitcode wrapper"
+  },
+  {
+    "name": "LRZIP",
+    "sigAscii": "LRZI",
+    "offset": 0,
+    "note": "Long Range ZIP (lrzip) archive"
+  },
+  {
+    "name": "Lua bytecode",
+    "sigHex": "1B4C7561",
+    "offset": 0,
+    "note": "Compiled Lua bytecode chunk"
+  },
+  {
+    "name": "LZ4 frame",
+    "sigHex": "04224D18",
+    "offset": 0,
+    "note": "LZ4 frame format"
+  },
+  {
+    "name": "LZ4 legacy",
+    "sigHex": "02214C18",
+    "offset": 0,
+    "note": "Legacy LZ4 compressed stream"
+  },
+  {
+    "name": "LZIP",
+    "sigAscii": "LZIP",
+    "offset": 0,
+    "note": "lzip compressed file"
   },
   {
     "name": "Mach-O (32/64)",
@@ -122,82 +1200,202 @@
     "note": "Mach-O (reverse endian)"
   },
   {
-    "name": "DER / X.509 (ASN.1)",
-    "sigHex": "3082",
+    "name": "Mach-O 64 reverse-endian",
+    "sigHex": "CFFAEDFE",
     "offset": 0,
-    "note": "DER-encoded cert or ASN.1 structure (Base64 'MII...')"
+    "note": "Mach-O 64-bit reverse-endian"
   },
   {
-    "name": "MP4 / ISOBMFF",
-    "sigAscii": "ftyp",
-    "offset": 4,
-    "note": "MP4/ISOBMFF family (ftyp at offset 4)"
+    "name": "Mach-O fat reverse 32",
+    "sigHex": "BEBAFECA",
+    "offset": 0,
+    "note": "Mach-O universal/fat 32-bit reverse-endian"
   },
   {
-    "name": "AVI",
-    "sigAscii": "RIFF",
+    "name": "Mach-O fat/universal 64",
+    "sigHex": "CAFEBABF",
     "offset": 0,
-    "note": "AVI video (look for 'AVI ' at offset 8)"
+    "note": "Mach-O universal/fat 64-bit binary"
   },
   {
-    "name": "WAV",
-    "sigAscii": "RIFF",
+    "name": "Mach-O fat/universal reverse 64",
+    "sigHex": "BFBAFECA",
     "offset": 0,
-    "note": "WAV audio (look for 'WAVE' at offset 8)"
+    "note": "Mach-O universal/fat 64-bit reverse-endian"
   },
   {
-    "name": "FLAC",
-    "sigAscii": "fLaC",
+    "name": "Matroska / WebM EBML",
+    "sigHex": "1A45DFA3",
     "offset": 0,
-    "note": "FLAC audio"
+    "note": "EBML container used by Matroska and WebM"
   },
   {
-    "name": "MP3 (ID3 tag)",
-    "sigAscii": "ID3",
+    "name": "MIDI",
+    "sigAscii": "MThd",
     "offset": 0,
-    "note": "MP3 audio with ID3 tag"
+    "note": "Standard MIDI file"
   },
   {
-    "name": "MP3 (frame sync)",
-    "sigHex": "FFFB",
+    "name": "Monkey's Audio",
+    "sigAscii": "MAC ",
     "offset": 0,
-    "note": "MP3 audio frame sync"
+    "note": "Monkey's Audio APE"
   },
   {
-    "name": "TIFF (LE)",
-    "sigHex": "49492A00",
+    "name": "MPEG Program Stream",
+    "sigHex": "000001BA",
     "offset": 0,
-    "note": "TIFF little-endian"
+    "note": "MPEG Program Stream pack header"
   },
   {
-    "name": "TIFF (BE)",
-    "sigHex": "4D4D002A",
+    "name": "MPEG video sequence",
+    "sigHex": "000001B3",
     "offset": 0,
-    "note": "TIFF big-endian"
+    "note": "MPEG-1/2 video sequence header"
   },
   {
-    "name": "HTML",
-    "sigAscii": "<!DOCT",
+    "name": "Musepack SV8",
+    "sigAscii": "MPCK",
     "offset": 0,
-    "note": "HTML document"
+    "note": "Musepack SV8 audio"
   },
   {
-    "name": "XML",
-    "sigAscii": "<?xml",
+    "name": "MXF SMPTE UL prefix",
+    "sigHex": "060E2B34",
     "offset": 0,
-    "note": "XML document"
+    "note": "Material eXchange Format usually starts with SMPTE Universal Label prefix"
   },
   {
-    "name": "Legacy DOC (OLE2)",
-    "sigHex": "D0CF11E0A1B11AE1",
+    "name": "NES iNES ROM",
+    "sigHex": "4E45531A",
     "offset": 0,
-    "note": "Old Microsoft Office (DOC/XLS/PPT)"
+    "note": "Nintendo Entertainment System iNES ROM"
   },
   {
-    "name": "WASM",
-    "sigHex": "0061736D",
+    "name": "NetCDF 64-bit data",
+    "sigHex": "43444605",
     "offset": 0,
-    "note": "WebAssembly binary"
+    "note": "NetCDF 64-bit data/CDF-5 format"
+  },
+  {
+    "name": "NetCDF 64-bit offset",
+    "sigHex": "43444602",
+    "offset": 0,
+    "note": "NetCDF 64-bit offset format"
+  },
+  {
+    "name": "NetCDF classic",
+    "sigHex": "43444601",
+    "offset": 0,
+    "note": "NetCDF classic format"
+  },
+  {
+    "name": "NIFF",
+    "sigAscii": "IIN1",
+    "offset": 0,
+    "note": "Navy Interchange File Format image"
+  },
+  {
+    "name": "Nintendo 64 ROM big-endian",
+    "sigHex": "80371240",
+    "offset": 0,
+    "note": "Nintendo 64 ROM, big-endian"
+  },
+  {
+    "name": "Nintendo 64 ROM byte-swapped",
+    "sigHex": "37804012",
+    "offset": 0,
+    "note": "Nintendo 64 ROM, byte-swapped"
+  },
+  {
+    "name": "Nintendo 64 ROM little-endian",
+    "sigHex": "40123780",
+    "offset": 0,
+    "note": "Nintendo 64 ROM, little-endian"
+  },
+  {
+    "name": "Nintendo Switch NSO",
+    "sigAscii": "NSO0",
+    "offset": 0,
+    "note": "Nintendo Switch NSO executable"
+  },
+  {
+    "name": "Ogg",
+    "sigAscii": "OggS",
+    "offset": 0,
+    "note": "Ogg container"
+  },
+  {
+    "name": "OpenEXR",
+    "sigHex": "762F3101",
+    "offset": 0,
+    "note": "OpenEXR image"
+  },
+  {
+    "name": "OpenType CFF",
+    "sigAscii": "OTTO",
+    "offset": 0,
+    "note": "OpenType font with CFF outlines"
+  },
+  {
+    "name": "Outlook PST/OST",
+    "sigAscii": "!BDN",
+    "offset": 0,
+    "note": "Microsoft Outlook Personal/Offline Storage Table"
+  },
+  {
+    "name": "PCAP BE microsecond",
+    "sigHex": "A1B2C3D4",
+    "offset": 0,
+    "note": "libpcap capture, big-endian microsecond timestamps"
+  },
+  {
+    "name": "PCAP BE nanosecond",
+    "sigHex": "A1B23C4D",
+    "offset": 0,
+    "note": "libpcap capture, big-endian nanosecond timestamps"
+  },
+  {
+    "name": "PCAP LE microsecond",
+    "sigHex": "D4C3B2A1",
+    "offset": 0,
+    "note": "libpcap capture, little-endian microsecond timestamps"
+  },
+  {
+    "name": "PCAP LE nanosecond",
+    "sigHex": "4D3CB2A1",
+    "offset": 0,
+    "note": "libpcap capture, little-endian nanosecond timestamps"
+  },
+  {
+    "name": "PCAPNG",
+    "sigHex": "0A0D0D0A",
+    "offset": 0,
+    "note": "pcapng Section Header Block"
+  },
+  {
+    "name": "PCF font",
+    "sigHex": "01666370",
+    "offset": 0,
+    "note": "X11 Portable Compiled Format font"
+  },
+  {
+    "name": "PDF",
+    "sigAscii": "%PDF",
+    "offset": 0,
+    "note": "PDF document"
+  },
+  {
+    "name": "PlayStation SCE/SELF",
+    "sigHex": "53434500",
+    "offset": 0,
+    "note": "Sony SCE signed executable/container family"
+  },
+  {
+    "name": "PostScript",
+    "sigAscii": "%!PS",
+    "offset": 0,
+    "note": "PostScript document"
   },
   {
     "name": "PSD",
@@ -206,9 +1404,1193 @@
     "note": "Photoshop Document"
   },
   {
-    "name": "SQLite",
-    "sigAscii": "SQLite format 3",
+    "name": "PSP PBP",
+    "sigHex": "00504250",
     "offset": 0,
-    "note": "SQLite database"
+    "note": "PlayStation Portable PBP package"
+  },
+  {
+    "name": "PVR v3",
+    "sigHex": "50565203",
+    "offset": 0,
+    "note": "PowerVR texture v3"
+  },
+  {
+    "name": "QCOW/QCOW2/QCOW3",
+    "sigHex": "514649FB",
+    "offset": 0,
+    "note": "QEMU Copy-On-Write virtual disk"
+  },
+  {
+    "name": "QOI",
+    "sigAscii": "qoif",
+    "offset": 0,
+    "note": "Quite OK Image format"
+  },
+  {
+    "name": "Quake III BSP",
+    "sigAscii": "IBSP",
+    "offset": 0,
+    "note": "id Tech BSP family (e.g. Quake III)"
+  },
+  {
+    "name": "R workspace XDR v2",
+    "sigAscii": "RDX2",
+    "offset": 0,
+    "note": "R workspace serialized data (XDR v2)"
+  },
+  {
+    "name": "R workspace XDR v3",
+    "sigAscii": "RDX3",
+    "offset": 0,
+    "note": "R workspace serialized data (XDR v3)"
+  },
+  {
+    "name": "RealAudio",
+    "sigHex": "2E7261FD",
+    "offset": 0,
+    "note": "RealAudio"
+  },
+  {
+    "name": "RealMedia",
+    "sigAscii": ".RMF",
+    "offset": 0,
+    "note": "RealMedia container"
+  },
+  {
+    "name": "RIFF container",
+    "sigAscii": "RIFF",
+    "offset": 0,
+    "note": "Generic RIFF container; inspect form-type marker at offset 8 for WEBP/AVI/WAV/ANI and others"
+  },
+  {
+    "name": "RPM package",
+    "sigHex": "EDABEEDB",
+    "offset": 0,
+    "note": "RPM package"
+  },
+  {
+    "name": "SID PSID",
+    "sigAscii": "PSID",
+    "offset": 0,
+    "note": "Commodore 64 SID music"
+  },
+  {
+    "name": "SID RSID",
+    "sigAscii": "RSID",
+    "offset": 0,
+    "note": "Commodore 64 Real SID music"
+  },
+  {
+    "name": "Smacker v2",
+    "sigAscii": "SMK2",
+    "offset": 0,
+    "note": "Smacker video v2"
+  },
+  {
+    "name": "Smacker v4",
+    "sigAscii": "SMK4",
+    "offset": 0,
+    "note": "Smacker video v4"
+  },
+  {
+    "name": "Source BSP",
+    "sigAscii": "VBSP",
+    "offset": 0,
+    "note": "Valve Source engine BSP"
+  },
+  {
+    "name": "SPSS SAV",
+    "sigAscii": "$FL2",
+    "offset": 0,
+    "note": "IBM SPSS Statistics .sav file"
+  },
+  {
+    "name": "SQLite WAL v1",
+    "sigHex": "377F0682",
+    "offset": 0,
+    "note": "SQLite write-ahead log"
+  },
+  {
+    "name": "SQLite WAL v2",
+    "sigHex": "377F0683",
+    "offset": 0,
+    "note": "SQLite write-ahead log alternate magic"
+  },
+  {
+    "name": "SquashFS BE",
+    "sigAscii": "sqsh",
+    "offset": 0,
+    "note": "SquashFS filesystem image, big-endian"
+  },
+  {
+    "name": "SquashFS LE",
+    "sigAscii": "hsqs",
+    "offset": 0,
+    "note": "SquashFS filesystem image, little-endian"
+  },
+  {
+    "name": "Sun Raster",
+    "sigHex": "59A66A95",
+    "offset": 0,
+    "note": "Sun raster image"
+  },
+  {
+    "name": "SVG direct",
+    "sigAscii": "<svg",
+    "offset": 0,
+    "note": "SVG document when root element begins at byte 0; XML prolog may precede it"
+  },
+  {
+    "name": "TIFF (BE)",
+    "sigHex": "4D4D002A",
+    "offset": 0,
+    "note": "TIFF big-endian"
+  },
+  {
+    "name": "TIFF (LE)",
+    "sigHex": "49492A00",
+    "offset": 0,
+    "note": "TIFF little-endian"
+  },
+  {
+    "name": "TNEF / winmail.dat",
+    "sigHex": "789F3E22",
+    "offset": 0,
+    "note": "Microsoft Transport Neutral Encapsulation Format"
+  },
+  {
+    "name": "TrueType Collection",
+    "sigAscii": "ttcf",
+    "offset": 0,
+    "note": "TrueType Collection"
+  },
+  {
+    "name": "TrueType font",
+    "sigHex": "00010000",
+    "offset": 0,
+    "note": "TrueType font"
+  },
+  {
+    "name": "U-Boot legacy image",
+    "sigHex": "27051956",
+    "offset": 0,
+    "note": "U-Boot legacy image header"
+  },
+  {
+    "name": "UTF-32 BE BOM text",
+    "sigHex": "0000FEFF",
+    "offset": 0,
+    "note": "UTF-32 big-endian byte-order mark"
+  },
+  {
+    "name": "UTF-32 LE BOM text",
+    "sigHex": "FFFE0000",
+    "offset": 0,
+    "note": "UTF-32 little-endian byte-order mark"
+  },
+  {
+    "name": "Valve VPK",
+    "sigHex": "3412AA55",
+    "offset": 0,
+    "note": "Valve VPK package"
+  },
+  {
+    "name": "VGM",
+    "sigAscii": "Vgm ",
+    "offset": 0,
+    "note": "Video Game Music log"
+  },
+  {
+    "name": "VMware sparse VMDK",
+    "sigHex": "4B444D56",
+    "offset": 0,
+    "note": "VMware sparse VMDK magic (KDMV bytes)"
+  },
+  {
+    "name": "WASM",
+    "sigHex": "0061736D",
+    "offset": 0,
+    "note": "WebAssembly binary"
+  },
+  {
+    "name": "WavPack",
+    "sigAscii": "wvpk",
+    "offset": 0,
+    "note": "WavPack audio"
+  },
+  {
+    "name": "Windows CHM",
+    "sigAscii": "ITSF",
+    "offset": 0,
+    "note": "Microsoft Compiled HTML Help"
+  },
+  {
+    "name": "Windows Minidump",
+    "sigAscii": "MDMP",
+    "offset": 0,
+    "note": "Windows minidump"
+  },
+  {
+    "name": "Windows Registry hive",
+    "sigAscii": "regf",
+    "offset": 0,
+    "note": "Windows Registry hive"
+  },
+  {
+    "name": "Windows thumbcache",
+    "sigAscii": "CMMM",
+    "offset": 0,
+    "note": "Windows thumbnail/icon cache database"
+  },
+  {
+    "name": "WOFF",
+    "sigAscii": "wOFF",
+    "offset": 0,
+    "note": "Web Open Font Format v1"
+  },
+  {
+    "name": "WOFF2",
+    "sigAscii": "wOF2",
+    "offset": 0,
+    "note": "Web Open Font Format v2"
+  },
+  {
+    "name": "WordPerfect document",
+    "sigHex": "FF575043",
+    "offset": 0,
+    "note": "WordPerfect document"
+  },
+  {
+    "name": "X3D Classic",
+    "sigAscii": "#X3D",
+    "offset": 0,
+    "note": "X3D classic encoding"
+  },
+  {
+    "name": "XAR archive",
+    "sigAscii": "xar!",
+    "offset": 0,
+    "note": "XAR archive; used by some macOS packages"
+  },
+  {
+    "name": "Xbox 360 XEX2",
+    "sigAscii": "XEX2",
+    "offset": 0,
+    "note": "Xbox 360 executable"
+  },
+  {
+    "name": "Xbox XBE",
+    "sigAscii": "XBEH",
+    "offset": 0,
+    "note": "Original Xbox executable"
+  },
+  {
+    "name": "XFS",
+    "sigAscii": "XFSB",
+    "offset": 0,
+    "note": "XFS filesystem superblock"
+  },
+  {
+    "name": "ZIP empty archive",
+    "sigHex": "504B0506",
+    "offset": 0,
+    "note": "ZIP end-of-central-directory signature (empty archive)"
+  },
+  {
+    "name": "ZIP spanned archive",
+    "sigHex": "504B0708",
+    "offset": 0,
+    "note": "ZIP data descriptor / spanned archive marker"
+  },
+  {
+    "name": "ZIP/OOXML/DOCX",
+    "sigHex": "504B0304",
+    "offset": 0,
+    "note": "ZIP container (also DOCX/XLSX/PPTX)"
+  },
+  {
+    "name": "Zstandard",
+    "sigHex": "28B52FFD",
+    "offset": 0,
+    "note": "Zstandard compressed frame"
+  },
+  {
+    "name": "Apache ORC",
+    "sigAscii": "ORC",
+    "offset": 0,
+    "note": "Apache ORC data file"
+  },
+  {
+    "name": "Bink video",
+    "sigAscii": "BIK",
+    "offset": 0,
+    "note": "Bink video family"
+  },
+  {
+    "name": "BZ2",
+    "sigAscii": "BZh",
+    "offset": 0,
+    "note": "bzip2 compressed stream"
+  },
+  {
+    "name": "CBOR self-described",
+    "sigHex": "D9D9F7",
+    "offset": 0,
+    "note": "CBOR self-described tag (optional but distinctive)"
+  },
+  {
+    "name": "FLV",
+    "sigAscii": "FLV",
+    "offset": 0,
+    "note": "Flash Video"
+  },
+  {
+    "name": "GZIP",
+    "sigHex": "1F8B08",
+    "offset": 0,
+    "note": "gzip compressed stream"
+  },
+  {
+    "name": "Hadoop SequenceFile",
+    "sigAscii": "SEQ",
+    "offset": 0,
+    "note": "Hadoop SequenceFile"
+  },
+  {
+    "name": "JPEG",
+    "sigHex": "FFD8FF",
+    "offset": 0,
+    "note": "JPEG image (JFIF/EXIF)"
+  },
+  {
+    "name": "MP3 (ID3 tag)",
+    "sigAscii": "ID3",
+    "offset": 0,
+    "note": "MP3 audio with ID3 tag"
+  },
+  {
+    "name": "PLY",
+    "sigAscii": "ply",
+    "offset": 0,
+    "note": "Polygon File Format / Stanford Triangle Format"
+  },
+  {
+    "name": "SWF LZMA",
+    "sigAscii": "ZWS",
+    "offset": 0,
+    "note": "Adobe Flash SWF, LZMA-compressed"
+  },
+  {
+    "name": "SWF uncompressed",
+    "sigAscii": "FWS",
+    "offset": 0,
+    "note": "Adobe Flash SWF, uncompressed"
+  },
+  {
+    "name": "SWF zlib",
+    "sigAscii": "CWS",
+    "offset": 0,
+    "note": "Adobe Flash SWF, zlib-compressed"
+  },
+  {
+    "name": "UTF-8 BOM text",
+    "sigHex": "EFBBBF",
+    "offset": 0,
+    "note": "UTF-8 byte-order mark"
+  },
+  {
+    "name": "AC-3",
+    "sigHex": "0B77",
+    "offset": 0,
+    "note": "Dolby AC-3 elementary stream sync word"
+  },
+  {
+    "name": "ARJ",
+    "sigHex": "60EA",
+    "offset": 0,
+    "note": "ARJ archive"
+  },
+  {
+    "name": "ASN.1 DER long SEQUENCE (heuristic)",
+    "sigHex": "3082",
+    "offset": 0,
+    "note": "ASN.1 DER SEQUENCE using long-form length; common in X.509/PKCS but not uniquely a certificate"
+  },
+  {
+    "name": "Autodesk 3DS",
+    "sigHex": "4D4D",
+    "offset": 0,
+    "note": "Autodesk 3D Studio .3ds main chunk ID"
+  },
+  {
+    "name": "BMP",
+    "sigAscii": "BM",
+    "sigHex": "424D",
+    "offset": 0,
+    "note": "Windows Bitmap"
+  },
+  {
+    "name": "CPIO binary BE",
+    "sigHex": "71C7",
+    "offset": 0,
+    "note": "cpio binary big-endian"
+  },
+  {
+    "name": "CPIO binary LE",
+    "sigHex": "C771",
+    "offset": 0,
+    "note": "cpio binary little-endian"
+  },
+  {
+    "name": "JPEG XL codestream",
+    "sigHex": "FF0A",
+    "offset": 0,
+    "note": "JPEG XL codestream"
+  },
+  {
+    "name": "MP3 (frame sync)",
+    "sigHex": "FFFB",
+    "offset": 0,
+    "note": "Common MPEG-1 Layer III frame header; heuristic and does not cover every MP3 frame variant"
+  },
+  {
+    "name": "Netpbm PAM",
+    "sigAscii": "P7",
+    "offset": 0,
+    "note": "Netpbm portable arbitrary map"
+  },
+  {
+    "name": "Netpbm PBM ASCII",
+    "sigAscii": "P1",
+    "offset": 0,
+    "note": "Netpbm portable bitmap (ASCII)"
+  },
+  {
+    "name": "Netpbm PBM binary",
+    "sigAscii": "P4",
+    "offset": 0,
+    "note": "Netpbm portable bitmap (binary)"
+  },
+  {
+    "name": "Netpbm PGM ASCII",
+    "sigAscii": "P2",
+    "offset": 0,
+    "note": "Netpbm portable graymap (ASCII)"
+  },
+  {
+    "name": "Netpbm PGM binary",
+    "sigAscii": "P5",
+    "offset": 0,
+    "note": "Netpbm portable graymap (binary)"
+  },
+  {
+    "name": "Netpbm PPM ASCII",
+    "sigAscii": "P3",
+    "offset": 0,
+    "note": "Netpbm portable pixmap (ASCII)"
+  },
+  {
+    "name": "Netpbm PPM binary",
+    "sigAscii": "P6",
+    "offset": 0,
+    "note": "Netpbm portable pixmap (binary)"
+  },
+  {
+    "name": "PE (MZ)",
+    "sigAscii": "MZ",
+    "sigHex": "4D5A",
+    "offset": 0,
+    "note": "Windows PE executable (MZ header)"
+  },
+  {
+    "name": "Python pickle protocol 2",
+    "sigHex": "8002",
+    "offset": 0,
+    "note": "Python pickle protocol 2"
+  },
+  {
+    "name": "Python pickle protocol 3",
+    "sigHex": "8003",
+    "offset": 0,
+    "note": "Python pickle protocol 3"
+  },
+  {
+    "name": "Python pickle protocol 4",
+    "sigHex": "8004",
+    "offset": 0,
+    "note": "Python pickle protocol 4"
+  },
+  {
+    "name": "Python pickle protocol 5",
+    "sigHex": "8005",
+    "offset": 0,
+    "note": "Python pickle protocol 5"
+  },
+  {
+    "name": "SGI RGB",
+    "sigHex": "01DA",
+    "offset": 0,
+    "note": "SGI RGB image"
+  },
+  {
+    "name": "Type 1 PFB",
+    "sigHex": "8001",
+    "offset": 0,
+    "note": "PostScript Type 1 binary font (PFB)"
+  },
+  {
+    "name": "Unix compress (.Z)",
+    "sigHex": "1F9D",
+    "offset": 0,
+    "note": "Unix compress .Z file"
+  },
+  {
+    "name": "Unix pack",
+    "sigHex": "1F1E",
+    "offset": 0,
+    "note": "Unix pack compressed file"
+  },
+  {
+    "name": "Unix shebang script",
+    "sigHex": "2321",
+    "offset": 0,
+    "note": "Unix script with shebang interpreter directive"
+  },
+  {
+    "name": "UTF-16 BE BOM text",
+    "sigHex": "FEFF",
+    "offset": 0,
+    "note": "UTF-16 big-endian byte-order mark"
+  },
+  {
+    "name": "UTF-16 LE BOM text",
+    "sigHex": "FFFE",
+    "offset": 0,
+    "note": "UTF-16 little-endian byte-order mark"
+  },
+  {
+    "name": "x86 option ROM",
+    "sigHex": "55AA",
+    "offset": 0,
+    "note": "x86 expansion/option ROM signature; weak 2-byte magic"
+  },
+  {
+    "name": "NumPy NPY",
+    "sigAscii": "NUMPY",
+    "offset": 1,
+    "note": "NumPy .npy marker after leading 0x93 byte"
+  },
+  {
+    "name": "LHA/LZH lh0 marker",
+    "sigAscii": "-lh0-",
+    "offset": 2,
+    "note": "LHA/LZH archive method marker"
+  },
+  {
+    "name": "LHA/LZH lh1 marker",
+    "sigAscii": "-lh1-",
+    "offset": 2,
+    "note": "LHA/LZH archive method marker"
+  },
+  {
+    "name": "LHA/LZH lh5 marker",
+    "sigAscii": "-lh5-",
+    "offset": 2,
+    "note": "LHA/LZH archive method marker"
+  },
+  {
+    "name": "LHA/LZH lh6 marker",
+    "sigAscii": "-lh6-",
+    "offset": 2,
+    "note": "LHA/LZH archive method marker"
+  },
+  {
+    "name": "LHA/LZH lh7 marker",
+    "sigAscii": "-lh7-",
+    "offset": 2,
+    "note": "LHA/LZH archive method marker"
+  },
+  {
+    "name": "LHA/LZH lz4 marker",
+    "sigAscii": "-lz4-",
+    "offset": 2,
+    "note": "LHA/LZH archive method marker"
+  },
+  {
+    "name": "LHA/LZH lzs marker",
+    "sigAscii": "-lzs-",
+    "offset": 2,
+    "note": "LHA/LZH archive method marker"
+  },
+  {
+    "name": "BitLocker FVE-FS",
+    "sigAscii": "-FVE-FS-",
+    "offset": 3,
+    "note": "BitLocker-encrypted volume OEM identifier"
+  },
+  {
+    "name": "exFAT",
+    "sigAscii": "EXFAT   ",
+    "offset": 3,
+    "note": "exFAT filesystem OEM ID"
+  },
+  {
+    "name": "NTFS",
+    "sigAscii": "NTFS    ",
+    "offset": 3,
+    "note": "NTFS filesystem OEM ID in boot sector"
+  },
+  {
+    "name": "Microsoft Access ACE DB",
+    "sigAscii": "Standard ACE DB",
+    "offset": 4,
+    "note": "Microsoft Access ACE database marker"
+  },
+  {
+    "name": "Microsoft Access Jet DB",
+    "sigAscii": "Standard Jet DB",
+    "offset": 4,
+    "note": "Microsoft Access Jet database marker"
+  },
+  {
+    "name": "Game Boy Advance Nintendo logo",
+    "sigHex": "24FFAE51699AA221",
+    "offset": 4,
+    "note": "Beginning of Nintendo logo in Game Boy Advance ROM header"
+  },
+  {
+    "name": "Microsoft ESE / JET Blue DB magic",
+    "sigHex": "EFCDAB89",
+    "offset": 4,
+    "note": "Microsoft Extensible Storage Engine / JET Blue database signature"
+  },
+  {
+    "name": "MP4 / ISOBMFF",
+    "sigAscii": "ftyp",
+    "offset": 4,
+    "note": "MP4/ISOBMFF family (ftyp at offset 4)"
+  },
+  {
+    "name": "Windows Prefetch SCCA",
+    "sigAscii": "SCCA",
+    "offset": 4,
+    "note": "Windows Prefetch marker in legacy/uncompressed prefetch files"
+  },
+  {
+    "name": "Autodesk Animator FLC",
+    "sigHex": "12AF",
+    "offset": 4,
+    "note": "Autodesk Animator FLC magic at offset 4"
+  },
+  {
+    "name": "Autodesk Animator FLI",
+    "sigHex": "11AF",
+    "offset": 4,
+    "note": "Autodesk Animator FLI magic at offset 4"
+  },
+  {
+    "name": "3GP brand 3gp4",
+    "sigAscii": "3gp4",
+    "offset": 8,
+    "note": "3GPP multimedia major brand"
+  },
+  {
+    "name": "3GP brand 3gp5",
+    "sigAscii": "3gp5",
+    "offset": 8,
+    "note": "3GPP multimedia major brand"
+  },
+  {
+    "name": "3GP brand 3gp6",
+    "sigAscii": "3gp6",
+    "offset": 8,
+    "note": "3GPP multimedia major brand"
+  },
+  {
+    "name": "AIFC marker",
+    "sigAscii": "AIFC",
+    "offset": 8,
+    "note": "AIFF-C IFF form type; pair with FORM at offset 0"
+  },
+  {
+    "name": "AIFF marker",
+    "sigAscii": "AIFF",
+    "offset": 8,
+    "note": "AIFF IFF form type; pair with FORM at offset 0"
+  },
+  {
+    "name": "ANI marker",
+    "sigAscii": "ACON",
+    "offset": 8,
+    "note": "Animated cursor RIFF form type; pair with RIFF at offset 0"
+  },
+  {
+    "name": "AVI marker",
+    "sigAscii": "AVI ",
+    "offset": 8,
+    "note": "AVI RIFF form type; pair with RIFF at offset 0"
+  },
+  {
+    "name": "AVIF brand",
+    "sigAscii": "avif",
+    "offset": 8,
+    "note": "AVIF major brand in ISO BMFF"
+  },
+  {
+    "name": "AVIF sequence brand",
+    "sigAscii": "avis",
+    "offset": 8,
+    "note": "AVIF image sequence major brand in ISO BMFF"
+  },
+  {
+    "name": "GnuPG keybox marker",
+    "sigAscii": "KBXf",
+    "offset": 8,
+    "note": "GnuPG keybox (KBX) marker"
+  },
+  {
+    "name": "HEIC brand",
+    "sigAscii": "heic",
+    "offset": 8,
+    "note": "HEIC major brand in ISO BMFF"
+  },
+  {
+    "name": "HEIF MIF1 brand",
+    "sigAscii": "mif1",
+    "offset": 8,
+    "note": "HEIF major brand"
+  },
+  {
+    "name": "HEIF MSF1 brand",
+    "sigAscii": "msf1",
+    "offset": 8,
+    "note": "HEIF sequence major brand"
+  },
+  {
+    "name": "HEIX brand",
+    "sigAscii": "heix",
+    "offset": 8,
+    "note": "HEIF/HEVC image major brand"
+  },
+  {
+    "name": "HEVC brand",
+    "sigAscii": "hevc",
+    "offset": 8,
+    "note": "HEIF/HEVC image major brand"
+  },
+  {
+    "name": "HEVX brand",
+    "sigAscii": "hevx",
+    "offset": 8,
+    "note": "HEIF/HEVC image major brand"
+  },
+  {
+    "name": "IFF 8SVX marker",
+    "sigAscii": "8SVX",
+    "offset": 8,
+    "note": "Amiga IFF 8-bit sampled voice form type; pair with FORM at offset 0"
+  },
+  {
+    "name": "IFF ANIM marker",
+    "sigAscii": "ANIM",
+    "offset": 8,
+    "note": "Amiga IFF animation form type; pair with FORM at offset 0"
+  },
+  {
+    "name": "IFF ILBM marker",
+    "sigAscii": "ILBM",
+    "offset": 8,
+    "note": "Amiga IFF ILBM bitmap form type; pair with FORM at offset 0"
+  },
+  {
+    "name": "IFF PBM marker",
+    "sigAscii": "PBM ",
+    "offset": 8,
+    "note": "Amiga IFF PBM bitmap form type; pair with FORM at offset 0"
+  },
+  {
+    "name": "M4A brand",
+    "sigAscii": "M4A ",
+    "offset": 8,
+    "note": "MPEG-4 audio major brand"
+  },
+  {
+    "name": "M4B brand",
+    "sigAscii": "M4B ",
+    "offset": 8,
+    "note": "MPEG-4 audiobook major brand"
+  },
+  {
+    "name": "MP4 iso2 brand",
+    "sigAscii": "iso2",
+    "offset": 8,
+    "note": "MP4/ISO BMFF major brand"
+  },
+  {
+    "name": "MP4 isom brand",
+    "sigAscii": "isom",
+    "offset": 8,
+    "note": "MP4/ISO BMFF major brand"
+  },
+  {
+    "name": "MP4 mp41 brand",
+    "sigAscii": "mp41",
+    "offset": 8,
+    "note": "MP4 v1 major brand"
+  },
+  {
+    "name": "MP4 mp42 brand",
+    "sigAscii": "mp42",
+    "offset": 8,
+    "note": "MP4 v2 major brand"
+  },
+  {
+    "name": "MPEG-DASH brand",
+    "sigAscii": "dash",
+    "offset": 8,
+    "note": "ISO BMFF DASH major brand"
+  },
+  {
+    "name": "QuickTime brand",
+    "sigAscii": "qt  ",
+    "offset": 8,
+    "note": "QuickTime MOV major brand"
+  },
+  {
+    "name": "WAVE marker",
+    "sigAscii": "WAVE",
+    "offset": 8,
+    "note": "WAV RIFF form type; pair with RIFF at offset 0"
+  },
+  {
+    "name": "WEBP marker",
+    "sigAscii": "WEBP",
+    "offset": 8,
+    "note": "WEBP RIFF form type; pair with RIFF at offset 0"
+  },
+  {
+    "name": "3G2 brand",
+    "sigAscii": "3g2",
+    "offset": 8,
+    "note": "3GPP2 multimedia major brand"
+  },
+  {
+    "name": "Berkeley DB Btree BE",
+    "sigHex": "00053162",
+    "offset": 12,
+    "note": "Berkeley DB Btree database magic, big-endian"
+  },
+  {
+    "name": "Berkeley DB Btree LE",
+    "sigHex": "62310500",
+    "offset": 12,
+    "note": "Berkeley DB Btree database magic, little-endian"
+  },
+  {
+    "name": "Berkeley DB Hash BE",
+    "sigHex": "00061561",
+    "offset": 12,
+    "note": "Berkeley DB Hash database magic, big-endian"
+  },
+  {
+    "name": "Berkeley DB Hash LE",
+    "sigHex": "61150600",
+    "offset": 12,
+    "note": "Berkeley DB Hash database magic, little-endian"
+  },
+  {
+    "name": "Berkeley DB Queue BE",
+    "sigHex": "00042253",
+    "offset": 12,
+    "note": "Berkeley DB Queue database magic, big-endian"
+  },
+  {
+    "name": "Berkeley DB Queue LE",
+    "sigHex": "53220400",
+    "offset": 12,
+    "note": "Berkeley DB Queue database magic, little-endian"
+  },
+  {
+    "name": "Nintendo Switch NRO",
+    "sigAscii": "NRO0",
+    "offset": 16,
+    "note": "Nintendo Switch NRO executable magic at 0x10"
+  },
+  {
+    "name": "Ogg Opus ID header",
+    "sigAscii": "OpusHead",
+    "offset": 28,
+    "note": "Opus identification header at common first Ogg packet offset"
+  },
+  {
+    "name": "Ogg Speex ID header",
+    "sigAscii": "Speex   ",
+    "offset": 28,
+    "note": "Speex identification header at common first Ogg packet offset"
+  },
+  {
+    "name": "Ogg Theora ID header",
+    "sigHex": "807468656F7261",
+    "offset": 28,
+    "note": "Theora identification packet at common first Ogg packet offset"
+  },
+  {
+    "name": "Ogg Vorbis ID header",
+    "sigHex": "01766F72626973",
+    "offset": 28,
+    "note": "Vorbis identification packet at common first Ogg packet offset"
+  },
+  {
+    "name": "EPUB mimetype filename marker",
+    "sigAscii": "mimetype",
+    "offset": 30,
+    "note": "Common EPUB ZIP layout marker when mimetype is first local-file entry"
+  },
+  {
+    "name": "APFS container",
+    "sigAscii": "NXSB",
+    "offset": 32,
+    "note": "Apple APFS container superblock magic"
+  },
+  {
+    "name": "APFS volume",
+    "sigAscii": "APSB",
+    "offset": 32,
+    "note": "Apple APFS volume superblock magic"
+  },
+  {
+    "name": "EOT magic",
+    "sigHex": "4C50",
+    "offset": 34,
+    "note": "Embedded OpenType MagicNumber 0x504C stored little-endian at offset 34"
+  },
+  {
+    "name": "EMF signature",
+    "sigAscii": " EMF",
+    "offset": 40,
+    "note": "Windows Enhanced Metafile signature in EMR_HEADER"
+  },
+  {
+    "name": "UEFI firmware volume",
+    "sigAscii": "_FVH",
+    "offset": 40,
+    "note": "UEFI PI Firmware Volume header signature"
+  },
+  {
+    "name": "S3M module",
+    "sigAscii": "SCRM",
+    "offset": 44,
+    "note": "Scream Tracker 3 module marker"
+  },
+  {
+    "name": "FAT12",
+    "sigAscii": "FAT12   ",
+    "offset": 54,
+    "note": "FAT12 filesystem type marker"
+  },
+  {
+    "name": "FAT16",
+    "sigAscii": "FAT16   ",
+    "offset": 54,
+    "note": "FAT16 filesystem type marker"
+  },
+  {
+    "name": "MOBI / AZW",
+    "sigAscii": "BOOKMOBI",
+    "offset": 60,
+    "note": "Mobipocket/Kindle MOBI-family database marker"
+  },
+  {
+    "name": "PalmDoc",
+    "sigAscii": "TEXtREAd",
+    "offset": 60,
+    "note": "PalmDoc database type/creator marker"
+  },
+  {
+    "name": "FAT32",
+    "sigAscii": "FAT32   ",
+    "offset": 82,
+    "note": "FAT32 filesystem type marker"
+  },
+  {
+    "name": "DICOM",
+    "sigAscii": "DICM",
+    "offset": 128,
+    "note": "DICOM medical image marker (Part 10 file)"
+  },
+  {
+    "name": "MRC/CCP4 map marker",
+    "sigAscii": "MAP ",
+    "offset": 208,
+    "note": "MRC/CCP4 electron-density map marker"
+  },
+  {
+    "name": "Sega Genesis ROM",
+    "sigAscii": "SEGA",
+    "offset": 256,
+    "note": "Sega Mega Drive/Genesis ROM header marker"
+  },
+  {
+    "name": "GNU TAR ustar",
+    "sigAscii": "ustar  ",
+    "offset": 257,
+    "note": "GNU tar archive marker"
+  },
+  {
+    "name": "TAR ustar",
+    "sigAscii": "ustar",
+    "offset": 257,
+    "note": "POSIX tar archive marker"
+  },
+  {
+    "name": "Game Boy ROM Nintendo logo",
+    "sigHex": "CEED6666CC0D000B",
+    "offset": 260,
+    "note": "Beginning of mandatory Nintendo logo in Game Boy ROM header"
+  },
+  {
+    "name": "Game Boy ROM Nintendo logo marker",
+    "sigAscii": "Nintendo",
+    "offset": 260,
+    "note": "Game Boy ROM header area (weak textual marker; logo is binary and stronger)"
+  },
+  {
+    "name": "NIfTI pair LE marker",
+    "sigAscii": "ni1",
+    "offset": 344,
+    "note": "NIfTI-1 header/image pair marker"
+  },
+  {
+    "name": "NIfTI single-file LE marker",
+    "sigAscii": "n+1",
+    "offset": 344,
+    "note": "NIfTI-1 single-file image marker"
+  },
+  {
+    "name": "MBR boot signature",
+    "sigHex": "55AA",
+    "offset": 510,
+    "note": "Legacy MBR/boot-sector signature; weak without additional structure checks"
+  },
+  {
+    "name": "GPT header 512-byte sectors",
+    "sigAscii": "EFI PART",
+    "offset": 512,
+    "note": "GUID Partition Table header at LBA1 for 512-byte sectors"
+  },
+  {
+    "name": "Nintendo Switch NCA2",
+    "sigAscii": "NCA2",
+    "offset": 512,
+    "note": "Nintendo Switch Content Archive v2 marker"
+  },
+  {
+    "name": "Nintendo Switch NCA3",
+    "sigAscii": "NCA3",
+    "offset": 512,
+    "note": "Nintendo Switch Content Archive v3 marker"
+  },
+  {
+    "name": "Linux kernel bzImage HdrS",
+    "sigAscii": "HdrS",
+    "offset": 514,
+    "note": "Linux x86 bzImage setup header marker"
+  },
+  {
+    "name": "PICT v2 marker",
+    "sigHex": "001102FF0C00",
+    "offset": 522,
+    "note": "Classic Macintosh PICT v2 marker in common 512-byte-header files"
+  },
+  {
+    "name": "HFS+ volume",
+    "sigHex": "482B",
+    "offset": 1024,
+    "note": "Apple HFS+ volume signature"
+  },
+  {
+    "name": "HFSX volume",
+    "sigHex": "4858",
+    "offset": 1024,
+    "note": "Apple HFSX volume signature"
+  },
+  {
+    "name": "MOD 4-channel",
+    "sigAscii": "4CHN",
+    "offset": 1080,
+    "note": "4-channel MOD marker"
+  },
+  {
+    "name": "MOD 6-channel",
+    "sigAscii": "6CHN",
+    "offset": 1080,
+    "note": "6-channel MOD marker"
+  },
+  {
+    "name": "MOD 8-channel",
+    "sigAscii": "8CHN",
+    "offset": 1080,
+    "note": "8-channel MOD marker"
+  },
+  {
+    "name": "MOD ProTracker M!K!",
+    "sigAscii": "M!K!",
+    "offset": 1080,
+    "note": "ProTracker MOD marker"
+  },
+  {
+    "name": "MOD ProTracker M.K.",
+    "sigAscii": "M.K.",
+    "offset": 1080,
+    "note": "ProTracker/NoiseTracker MOD marker"
+  },
+  {
+    "name": "ext2/ext3/ext4 superblock",
+    "sigHex": "53EF",
+    "offset": 1080,
+    "note": "ext2/ext3/ext4 filesystem magic at superblock+0x38 (little-endian bytes)"
+  },
+  {
+    "name": "GPT header 4096-byte sectors",
+    "sigAscii": "EFI PART",
+    "offset": 4096,
+    "note": "GUID Partition Table header at LBA1 for 4K sectors"
+  },
+  {
+    "name": "ISO9660 PVD",
+    "sigAscii": "CD001",
+    "offset": 32769,
+    "note": "ISO 9660 Primary Volume Descriptor identifier"
+  },
+  {
+    "name": "UDF BEA01",
+    "sigAscii": "BEA01",
+    "offset": 32769,
+    "note": "UDF/ECMA-167 volume recognition sequence marker"
+  },
+  {
+    "name": "ISO9660 SVD",
+    "sigAscii": "CD001",
+    "offset": 34817,
+    "note": "ISO 9660 supplementary/secondary volume descriptor common location"
+  },
+  {
+    "name": "UDF NSR02",
+    "sigAscii": "NSR02",
+    "offset": 34817,
+    "note": "UDF volume recognition sequence marker"
+  },
+  {
+    "name": "UDF NSR03",
+    "sigAscii": "NSR03",
+    "offset": 34817,
+    "note": "UDF volume recognition sequence marker"
+  },
+  {
+    "name": "Btrfs",
+    "sigAscii": "_BHRfS_M",
+    "offset": 65600,
+    "note": "Btrfs filesystem magic at superblock+0x40"
   }
 ]
