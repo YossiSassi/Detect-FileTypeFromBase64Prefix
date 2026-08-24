@@ -32,3 +32,10 @@ ExportJson = Path to exported JSON results file, e.g. c:\temp\filetypes.json
 ```
 .\Detect-FileTypeFromBase64Prefix.ps1 -Path C:\Downloads -Recurse -ExportCsv .\filetypes.csv
 ```
+
+### .EXAMPLE 3
+#### Filter and hunt for irregular PE/MZ files post-scan
+```
+cat c:\temp\b64_prefix_downloads.json -Raw | ConvertFrom-Json | Where-Object {$_.detected -eq "PE (MZ)" -and $_.path -NotLike "*.exe"} | more
+```
+![Filter/hunt example](screenshots/screenshot_detectprefixfilter.png)
